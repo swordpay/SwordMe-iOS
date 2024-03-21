@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-SemiBold.ttf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ChannelsHeaderComponentsView" customModule="SwordAppArch">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="132"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="mHg-tK-HKb">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="122"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uAC-nF-NOQ" userLabel="tab holder view">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="47"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yp0-ou-cpf" userLabel="Top Horizontal Separator">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="1"/>
+                                    <color key="backgroundColor" name="lightBlue2"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="bBh-S4-3o0"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nAM-fD-a4c" userLabel="Vertical Separator">
+                                    <rect key="frame" x="187" y="10" width="1" height="27"/>
+                                    <color key="backgroundColor" name="lightBlue2"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="1" id="YRR-Ue-Xpw"/>
+                                        <constraint firstAttribute="height" constant="27" id="e8l-g2-Vwm"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="neb-Q4-5eZ" userLabel="Bottom Horizontal Separator">
+                                    <rect key="frame" x="0.0" y="46" width="375" height="1"/>
+                                    <color key="backgroundColor" name="lightBlue2"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="YzI-r3-Tu6"/>
+                                    </constraints>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dAt-mm-Hff">
+                                    <rect key="frame" x="10" y="6" width="167" height="35"/>
+                                    <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins SemiBold" pointSize="16"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="Button">
+                                        <color key="titleColor" name="gradientDarkBlue"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YIt-pm-vRD">
+                                    <rect key="frame" x="198" y="6" width="167" height="35"/>
+                                    <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins SemiBold" pointSize="16"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="Button">
+                                        <color key="titleColor" name="mainGray4"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="transactionsButtonTouchUp:" destination="iN0-l3-epB" eventType="touchUpInside" id="jnS-8a-YMq"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="YIt-pm-vRD" firstAttribute="leading" secondItem="nAM-fD-a4c" secondAttribute="trailing" constant="10" id="0im-Ra-hYG"/>
+                                <constraint firstItem="dAt-mm-Hff" firstAttribute="leading" secondItem="uAC-nF-NOQ" secondAttribute="leading" constant="10" id="3pf-su-6i4"/>
+                                <constraint firstItem="Yp0-ou-cpf" firstAttribute="top" secondItem="uAC-nF-NOQ" secondAttribute="top" id="5ez-aw-YkH"/>
+                                <constraint firstAttribute="height" constant="47" id="8Pa-46-vju"/>
+                                <constraint firstItem="nAM-fD-a4c" firstAttribute="centerX" secondItem="uAC-nF-NOQ" secondAttribute="centerX" id="JAl-e6-iSR"/>
+                                <constraint firstAttribute="trailing" secondItem="Yp0-ou-cpf" secondAttribute="trailing" id="Xod-0D-tfI"/>
+                                <constraint firstItem="neb-Q4-5eZ" firstAttribute="top" secondItem="nAM-fD-a4c" secondAttribute="bottom" constant="9" id="Zbu-nY-Evq"/>
+                                <constraint firstItem="neb-Q4-5eZ" firstAttribute="leading" secondItem="uAC-nF-NOQ" secondAttribute="leading" id="bSs-9D-AoY"/>
+                                <constraint firstItem="nAM-fD-a4c" firstAttribute="top" secondItem="Yp0-ou-cpf" secondAttribute="bottom" constant="9" id="cIs-Le-1KY"/>
+                                <constraint firstItem="Yp0-ou-cpf" firstAttribute="leading" secondItem="uAC-nF-NOQ" secondAttribute="leading" id="dgQ-Ae-cgG"/>
+                                <constraint firstAttribute="bottom" secondItem="neb-Q4-5eZ" secondAttribute="bottom" id="gdI-e7-NiC"/>
+                                <constraint firstItem="nAM-fD-a4c" firstAttribute="leading" secondItem="dAt-mm-Hff" secondAttribute="trailing" constant="10" id="je1-nj-5hZ"/>
+                                <constraint firstItem="dAt-mm-Hff" firstAttribute="centerY" secondItem="uAC-nF-NOQ" secondAttribute="centerY" id="nKC-XV-hTk"/>
+                                <constraint firstAttribute="trailing" secondItem="YIt-pm-vRD" secondAttribute="trailing" constant="10" id="rGg-JT-Ih0"/>
+                                <constraint firstAttribute="trailing" secondItem="neb-Q4-5eZ" secondAttribute="trailing" id="weM-Rd-nZq"/>
+                                <constraint firstItem="YIt-pm-vRD" firstAttribute="centerY" secondItem="uAC-nF-NOQ" secondAttribute="centerY" id="zEh-gS-FV2"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X5f-nP-a9I" userLabel="recents holderview">
+                            <rect key="frame" x="0.0" y="62" width="375" height="60"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="JZI-iJ-bHU"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="mHg-tK-HKb" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="AYZ-oX-I1s"/>
+                <constraint firstItem="mHg-tK-HKb" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="VBI-Ke-zhg"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="mHg-tK-HKb" secondAttribute="trailing" id="jKn-dw-fod"/>
+                <constraint firstAttribute="bottom" secondItem="mHg-tK-HKb" secondAttribute="bottom" constant="10" id="rxa-Le-rNz"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="feedButton" destination="dAt-mm-Hff" id="Azx-hf-IoV"/>
+                <outlet property="recentsHolderView" destination="X5f-nP-a9I" id="Wab-UA-caC"/>
+                <outlet property="recentsHolderViewHeightConstraint" destination="JZI-iJ-bHU" id="RUo-MG-JCs"/>
+                <outlet property="tabsHolderView" destination="uAC-nF-NOQ" id="4Fx-Xl-Ad7"/>
+                <outlet property="transactionsButton" destination="YIt-pm-vRD" id="YZ1-kP-MKc"/>
+            </connections>
+            <point key="canvasLocation" x="20" y="21"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="gradientDarkBlue">
+            <color red="0.035294117647058823" green="0.20392156862745098" blue="0.53725490196078429" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="lightBlue2">
+            <color red="0.96470588235294119" green="0.97254901960784312" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="mainGray4">
+            <color red="0.53299999237060547" green="0.54900002479553223" blue="0.57599997520446777" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

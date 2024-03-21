@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SearchBarHeaderView" customModule="SwordAppArch">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="58"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <searchBar contentMode="redraw" searchBarStyle="minimal" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AOW-9s-hO0">
+                    <rect key="frame" x="0.0" y="11" width="375" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="pd9-IB-ejW"/>
+                    </constraints>
+                    <offsetWrapper key="searchFieldBackgroundPositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="AOW-9s-hO0" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ARi-Mf-YSX"/>
+                <constraint firstAttribute="trailing" secondItem="AOW-9s-hO0" secondAttribute="trailing" id="NBw-ba-f0J"/>
+                <constraint firstItem="AOW-9s-hO0" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Ux0-V8-eRO"/>
+                <constraint firstItem="AOW-9s-hO0" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="11" id="uVb-x0-TgM"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="searchBar" destination="AOW-9s-hO0" id="h0A-Yi-Rei"/>
+            </connections>
+            <point key="canvasLocation" x="103.05343511450381" y="20.422535211267608"/>
+        </view>
+    </objects>
+</document>

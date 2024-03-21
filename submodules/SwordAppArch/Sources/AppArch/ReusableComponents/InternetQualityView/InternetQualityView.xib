@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-SemiBold.ttf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="InternetQualityView" customModule="SwordAppArch">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zO3-OF-nnh">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IZM-eq-tMy">
+                            <rect key="frame" x="170.33333333333334" y="11.999999999999998" width="34.333333333333343" height="16.333333333333329"/>
+                            <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins SemiBold" pointSize="14"/>
+                            <color key="textColor" name="mainWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" name="gradientDarkBlue"/>
+                    <constraints>
+                        <constraint firstItem="IZM-eq-tMy" firstAttribute="centerX" secondItem="zO3-OF-nnh" secondAttribute="centerX" id="CEk-hz-Hwt"/>
+                        <constraint firstItem="IZM-eq-tMy" firstAttribute="centerY" secondItem="zO3-OF-nnh" secondAttribute="centerY" id="JSr-U5-DB7"/>
+                        <constraint firstAttribute="height" constant="40" id="klE-Cs-ZTB"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="zO3-OF-nnh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Zj0-p5-Vtb"/>
+                <constraint firstAttribute="bottom" secondItem="zO3-OF-nnh" secondAttribute="bottom" id="evI-Y4-cQU"/>
+                <constraint firstItem="zO3-OF-nnh" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="z7a-NB-S4o"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="zO3-OF-nnh" secondAttribute="trailing" id="zc5-75-kee"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="backgroundView" destination="zO3-OF-nnh" id="kcV-ZL-gb6"/>
+                <outlet property="titleLabel" destination="IZM-eq-tMy" id="1T7-0i-b9Z"/>
+            </connections>
+            <point key="canvasLocation" x="64" y="21"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="gradientDarkBlue">
+            <color red="0.035000000149011612" green="0.20399999618530273" blue="0.53700000047683716" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="mainWhite">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

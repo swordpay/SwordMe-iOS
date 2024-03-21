@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="QRCodePagerStackView" customModule="SwordAppArch">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l4b-ea-Xy4">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h1A-eb-ZVx">
+                    <rect key="frame" x="26" y="112" width="341" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Ov9-cf-FXS"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CGE-kd-QRR">
+                    <rect key="frame" x="20" y="50" width="42" height="42"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="42" id="fgS-LQ-RPf"/>
+                        <constraint firstAttribute="width" constant="42" id="rJJ-L2-e44"/>
+                    </constraints>
+                    <color key="tintColor" red="0.33333333333333331" green="0.34509803921568627" blue="0.36470588235294116" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="chevron.left" catalog="system"/>
+                    <connections>
+                        <action selector="closeButtonTouchUp:" destination="iN0-l3-epB" eventType="touchUpInside" id="SCn-ch-04P"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="h1A-eb-ZVx" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="26" id="9rs-71-cei"/>
+                <constraint firstItem="l4b-ea-Xy4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="PK8-Yx-YuE"/>
+                <constraint firstItem="CGE-kd-QRR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="TeJ-RZ-LcY"/>
+                <constraint firstAttribute="bottom" secondItem="l4b-ea-Xy4" secondAttribute="bottom" id="bAo-RH-R8j"/>
+                <constraint firstAttribute="trailing" secondItem="l4b-ea-Xy4" secondAttribute="trailing" id="ebR-fO-tfC"/>
+                <constraint firstItem="CGE-kd-QRR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="50" id="lk3-kf-Y51"/>
+                <constraint firstAttribute="trailing" secondItem="h1A-eb-ZVx" secondAttribute="trailing" constant="26" id="nKy-K0-C1R"/>
+                <constraint firstItem="h1A-eb-ZVx" firstAttribute="top" secondItem="CGE-kd-QRR" secondAttribute="bottom" constant="20" id="vuY-9a-0nR"/>
+                <constraint firstItem="l4b-ea-Xy4" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="yRf-TP-AUi"/>
+            </constraints>
+            <connections>
+                <outlet property="closeButton" destination="CGE-kd-QRR" id="HEg-qq-KHa"/>
+                <outlet property="closeButtonTopConstraint" destination="lk3-kf-Y51" id="vJ5-nf-vus"/>
+                <outlet property="pagerHolderView" destination="l4b-ea-Xy4" id="aNU-qy-1fN"/>
+                <outlet property="segmentedControlHolderView" destination="h1A-eb-ZVx" id="H8Q-Ax-Dp7"/>
+            </connections>
+            <point key="canvasLocation" x="100" y="21"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="chevron.left" catalog="system" width="97" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

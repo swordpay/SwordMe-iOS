@@ -1,0 +1,14 @@
+{
+    "bundle_id": "com.swordpay.me",
+    "api_id": "",
+    "api_hash": "",
+    "team_id": "",
+    "app_center_id": "",
+    "is_internal_build": "false",
+    "is_appstore_build": "true",
+    "appstore_id": "",
+    "app_specific_url_scheme": "",
+    "premium_iap_product_id": "",
+    "enable_siri": true,
+    "enable_icloud": true
+}

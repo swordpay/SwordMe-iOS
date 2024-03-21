@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Bold.ttf">
+            <string>Poppins-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CodeVerificationItemView" customModule="SwordAppArch">
+            <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="2bi-2k-SgD">
+                    <rect key="frame" x="5" y="0.0" width="50" height="60"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Luh-XS-yJw" customClass="DeleteActionTrackingTextField" customModule="SwordAppArch">
+                            <rect key="frame" x="0.0" y="0.0" width="50" height="49"/>
+                            <color key="textColor" name="textColor"/>
+                            <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="26"/>
+                            <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="one-time-code"/>
+                            <connections>
+                                <action selector="textFieldTextDidChange:" destination="iN0-l3-epB" eventType="valueChanged" id="HxI-T8-Mw3"/>
+                            </connections>
+                        </textField>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UYJ-3Q-alO">
+                            <rect key="frame" x="0.0" y="59" width="50" height="1"/>
+                            <color key="backgroundColor" name="lightGray3"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="Il2-6C-eij"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="Goq-9E-56l"/>
+                        <constraint firstAttribute="height" constant="60" id="YvG-cH-L15"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="2bi-2k-SgD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="dpm-ye-5Vm"/>
+                <constraint firstItem="2bi-2k-SgD" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="gaF-yA-04U"/>
+                <constraint firstAttribute="bottom" secondItem="2bi-2k-SgD" secondAttribute="bottom" id="is7-c7-ZlG"/>
+                <constraint firstAttribute="trailing" secondItem="2bi-2k-SgD" secondAttribute="trailing" constant="5" id="l48-2q-6Bm"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="codeTextField" destination="Luh-XS-yJw" id="WfE-hC-TbV"/>
+                <outlet property="underlineView" destination="UYJ-3Q-alO" id="vsk-UO-DQC"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="21"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="lightGray3">
+            <color red="0.85100001096725464" green="0.85100001096725464" blue="0.85100001096725464" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="textColor">
+            <color red="0.18400000035762787" green="0.18799999356269836" blue="0.19599999487400055" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

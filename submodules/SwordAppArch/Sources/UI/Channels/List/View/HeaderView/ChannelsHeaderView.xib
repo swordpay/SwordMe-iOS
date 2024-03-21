@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ChannelsHeaderView" customModule="SwordAppArch">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="52"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="o3b-Fw-gdr">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="52"/>
+                    <subviews>
+                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kca-f6-grv">
+                            <rect key="frame" x="10" y="0.0" width="373" height="0.0"/>
+                            <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="12"/>
+                            <color key="textColor" name="mainGray4"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="4QG-L2-tOk">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="52"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="52" id="7Gy-tm-whC"/>
+                            </constraints>
+                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="NjF-E0-X3T">
+                                <size key="itemSize" width="128" height="128"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                        </collectionView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Kca-f6-grv" secondAttribute="trailing" constant="10" id="0iY-Ff-cG6"/>
+                        <constraint firstItem="4QG-L2-tOk" firstAttribute="leading" secondItem="o3b-Fw-gdr" secondAttribute="leading" id="6AT-fo-dVG"/>
+                        <constraint firstItem="Kca-f6-grv" firstAttribute="leading" secondItem="o3b-Fw-gdr" secondAttribute="leading" constant="10" id="Fam-5e-JLV"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="o3b-Fw-gdr" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="JMk-hP-cmH"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="o3b-Fw-gdr" secondAttribute="trailing" id="PYR-gL-LGV"/>
+                <constraint firstItem="o3b-Fw-gdr" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="ghN-xq-FvX"/>
+                <constraint firstAttribute="bottom" secondItem="o3b-Fw-gdr" secondAttribute="bottom" id="o1q-rU-fG2"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="recentChannelsCollectionView" destination="4QG-L2-tOk" id="dGt-nf-esD"/>
+                <outlet property="recentChannelsCollectionViewHeightConstraint" destination="7Gy-tm-whC" id="6VF-EL-CIr"/>
+                <outlet property="recentTitleLabel" destination="Kca-f6-grv" id="hmw-20-orH"/>
+            </connections>
+            <point key="canvasLocation" x="90.839694656488547" y="20.422535211267608"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="mainGray4">
+            <color red="0.53299999237060547" green="0.54900002479553223" blue="0.57599997520446777" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

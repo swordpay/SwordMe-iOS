@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Bold.ttf">
+            <string>Poppins-Bold</string>
+        </array>
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KsX-Gc-rZ2" customClass="ValidatableTextField" customModule="SwordAppArch">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="1000" axis="vertical" alignment="center" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="H5q-GS-0gG">
+                    <rect key="frame" x="0.0" y="5" width="414" height="65"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bpG-p1-n2L" userLabel="HolderView">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2ZV-LG-V9G">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="42"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="tintColor" name="textBlue"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" priority="999" constant="50" id="AoA-Bx-nnx"/>
+                                    </constraints>
+                                    <color key="textColor" name="textColor"/>
+                                    <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="22"/>
+                                    <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                    <connections>
+                                        <action selector="textFieldTextDidChange:" destination="KsX-Gc-rZ2" eventType="editingChanged" id="ukQ-EL-oay"/>
+                                    </connections>
+                                </textField>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O6R-yC-3GB">
+                                    <rect key="frame" x="0.0" y="42" width="414" height="1"/>
+                                    <color key="backgroundColor" name="lightGray2"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="PNa-Nv-WKf"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="O6R-yC-3GB" secondAttribute="trailing" id="Axu-Z0-1No"/>
+                                <constraint firstAttribute="bottom" secondItem="O6R-yC-3GB" secondAttribute="bottom" id="cAx-Ps-2bY"/>
+                                <constraint firstAttribute="trailing" secondItem="2ZV-LG-V9G" secondAttribute="trailing" id="fc7-en-t1K"/>
+                                <constraint firstItem="O6R-yC-3GB" firstAttribute="leading" secondItem="bpG-p1-n2L" secondAttribute="leading" id="g3F-PL-3dJ"/>
+                                <constraint firstAttribute="bottom" secondItem="2ZV-LG-V9G" secondAttribute="bottom" constant="1" id="joE-2a-AhQ"/>
+                                <constraint firstItem="2ZV-LG-V9G" firstAttribute="leading" secondItem="bpG-p1-n2L" secondAttribute="leading" id="qHl-Bw-bLe"/>
+                                <constraint firstItem="2ZV-LG-V9G" firstAttribute="top" secondItem="bpG-p1-n2L" secondAttribute="top" id="xy8-67-KdX"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="wyu-Rc-Za8">
+                            <rect key="frame" x="0.0" y="46" width="414" height="19"/>
+                            <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
+                            <color key="textColor" name="mainRed"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="bpG-p1-n2L" firstAttribute="leading" secondItem="H5q-GS-0gG" secondAttribute="leading" id="R95-kE-hV1"/>
+                        <constraint firstItem="wyu-Rc-Za8" firstAttribute="leading" secondItem="H5q-GS-0gG" secondAttribute="leading" id="Shl-Wh-h3v"/>
+                        <constraint firstAttribute="trailing" secondItem="bpG-p1-n2L" secondAttribute="trailing" id="Y6t-Ht-zBb"/>
+                        <constraint firstAttribute="trailing" secondItem="wyu-Rc-Za8" secondAttribute="trailing" id="hfp-Jk-ZZk"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="H5q-GS-0gG" firstAttribute="leading" secondItem="KsX-Gc-rZ2" secondAttribute="leading" id="F2I-4Z-bab"/>
+                <constraint firstAttribute="trailing" secondItem="H5q-GS-0gG" secondAttribute="trailing" id="NBL-qg-KWa"/>
+                <constraint firstAttribute="bottom" secondItem="H5q-GS-0gG" secondAttribute="bottom" id="Yf1-BG-M3m"/>
+                <constraint firstItem="H5q-GS-0gG" firstAttribute="top" secondItem="KsX-Gc-rZ2" secondAttribute="top" constant="5" id="vvj-aD-5ta"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="errorMessageLabel" destination="wyu-Rc-Za8" id="NBm-Zs-3fe"/>
+                <outlet property="textField" destination="2ZV-LG-V9G" id="P6F-rB-4MN"/>
+                <outlet property="textFieldSeparatorView" destination="O6R-yC-3GB" id="bRq-R7-RT2"/>
+            </connections>
+            <point key="canvasLocation" x="-52.173913043478265" y="112.5"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="lightGray2">
+            <color red="0.77600002288818359" green="0.77600002288818359" blue="0.7839999794960022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="mainRed">
+            <color red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="textBlue">
+            <color red="0.0" green="0.54900002479553223" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="textColor">
+            <color red="0.18400000035762787" green="0.18799999356269836" blue="0.19599999487400055" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

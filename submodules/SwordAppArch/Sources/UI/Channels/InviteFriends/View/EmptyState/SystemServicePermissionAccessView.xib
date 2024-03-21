@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+        <array key="Poppins-SemiBold.ttf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SystemServicePermissionAccessView" customModule="SwordAppArch">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="URd-B5-2HG">
+                    <rect key="frame" x="30" y="324" width="333" height="204.33333333333337"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="xsP-f5-3JW">
+                            <rect key="frame" x="126" y="0.0" width="81" height="116.66666666666667"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera-access-icon" translatesAutoresizingMaskIntoConstraints="NO" id="Ooi-02-mQe">
+                                    <rect key="frame" x="0.0" y="0.0" width="81" height="81"/>
+                                    <color key="tintColor" name="mainRed"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fVg-u3-ceU">
+                                    <rect key="frame" x="13.666666666666657" y="91" width="54" height="25.666666666666671"/>
+                                    <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins SemiBold" pointSize="22"/>
+                                    <color key="textColor" name="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6JK-en-e6G">
+                            <rect key="frame" x="147" y="136.66666666666669" width="39.333333333333343" height="18.666666666666657"/>
+                            <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
+                            <color key="textColor" name="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t5B-O2-eGZ">
+                            <rect key="frame" x="145" y="175.33333333333331" width="43" height="29"/>
+                            <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins SemiBold" pointSize="14"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Button">
+                                <color key="titleColor" name="textBlue2"/>
+                            </state>
+                            <connections>
+                                <action selector="goToSettings" destination="iN0-l3-epB" eventType="touchUpInside" id="c44-bE-5kK"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AuA-PB-RKU">
+                    <rect key="frame" x="20" y="60" width="35" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="35" id="7fc-br-sxa"/>
+                        <constraint firstAttribute="height" constant="35" id="Ty2-43-SVq"/>
+                    </constraints>
+                    <color key="tintColor" name="textColor"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal">
+                        <imageReference key="image" image="xmark.circle.fill" catalog="system" symbolScale="medium"/>
+                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="28"/>
+                    </state>
+                    <connections>
+                        <action selector="closeSettings" destination="iN0-l3-epB" eventType="touchUpInside" id="1lJ-Xy-mHo"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="AuA-PB-RKU" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="60" id="JsK-Lx-plk"/>
+                <constraint firstItem="URd-B5-2HG" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Q1E-um-S2w"/>
+                <constraint firstItem="AuA-PB-RKU" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="QmE-Oe-Fcj"/>
+                <constraint firstItem="URd-B5-2HG" firstAttribute="top" relation="greaterThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="kQf-sn-KR6"/>
+                <constraint firstItem="URd-B5-2HG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="vJU-9m-TyJ"/>
+                <constraint firstItem="URd-B5-2HG" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="zbO-qE-adx"/>
+            </constraints>
+            <connections>
+                <outlet property="closeButton" destination="AuA-PB-RKU" id="UNc-nQ-wcE"/>
+                <outlet property="descriptionLabel" destination="6JK-en-e6G" id="rpf-yI-uJq"/>
+                <outlet property="errorIconImageView" destination="Ooi-02-mQe" id="jjf-ZJ-gBc"/>
+                <outlet property="goToSettingsButton" destination="t5B-O2-eGZ" id="aYJ-ru-YZV"/>
+                <outlet property="titleLabel" destination="fVg-u3-ceU" id="i8p-1q-9i4"/>
+            </connections>
+            <point key="canvasLocation" x="84" y="21"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="camera-access-icon" width="81" height="81"/>
+        <image name="xmark.circle.fill" catalog="system" width="128" height="123"/>
+        <namedColor name="mainRed">
+            <color red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="textBlue2">
+            <color red="0.20399999618530273" green="0.59200000762939453" blue="0.97600001096725464" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="textColor">
+            <color red="0.18400000035762787" green="0.18799999356269836" blue="0.19599999487400055" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

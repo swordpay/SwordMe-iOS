@@ -1,0 +1,3 @@
+common --incompatible_fail_on_unknown_attributes
+
+build:cache --remote_build_event_upload=minimal

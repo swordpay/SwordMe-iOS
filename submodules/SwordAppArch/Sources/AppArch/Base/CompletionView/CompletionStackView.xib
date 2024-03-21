@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="GraphikBold.otf">
+            <string>Graphik-Bold</string>
+        </array>
+        <array key="GraphikRegular.otf">
+            <string>Graphik-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" id="wAR-RL-757" customClass="CompletionStackView" customModule="faat_v2_ios" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="394" height="581"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gcp-2c-2nb">
+                    <rect key="frame" x="0.0" y="0.0" width="394" height="581"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="eJl-nl-n01">
+                            <rect key="frame" x="15" y="38.5" width="364" height="504"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4zD-92-DsP">
+                                    <rect key="frame" x="64" y="0.0" width="236" height="236"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="4zD-92-DsP" secondAttribute="height" multiplier="1:1" id="LFw-CM-5rK"/>
+                                    </constraints>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C3v-7a-PoR">
+                                    <rect key="frame" x="0.0" y="296" width="364" height="24"/>
+                                    <fontDescription key="fontDescription" name="Graphik-Bold" family="Graphik" pointSize="24"/>
+                                    <color key="textColor" name="mainWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rGK-kq-GQs">
+                                    <rect key="frame" x="0.0" y="380" width="364" height="14"/>
+                                    <fontDescription key="fontDescription" name="Graphik-Regular" family="Graphik" pointSize="14"/>
+                                    <color key="textColor" name="mainWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A37-Ga-b5P">
+                                    <rect key="frame" x="0.0" y="454" width="364" height="50"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="6pr-mY-ShE"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="rGK-kq-GQs" firstAttribute="leading" secondItem="eJl-nl-n01" secondAttribute="leading" id="G8J-hJ-iei"/>
+                                <constraint firstItem="C3v-7a-PoR" firstAttribute="leading" secondItem="eJl-nl-n01" secondAttribute="leading" id="cip-Xq-sfe"/>
+                                <constraint firstItem="A37-Ga-b5P" firstAttribute="leading" secondItem="eJl-nl-n01" secondAttribute="leading" id="eGw-Gj-qjh"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="eJl-nl-n01" firstAttribute="leading" secondItem="Gcp-2c-2nb" secondAttribute="leading" constant="15" id="5J4-I2-GFn"/>
+                        <constraint firstItem="eJl-nl-n01" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Gcp-2c-2nb" secondAttribute="top" constant="20" id="Abs-U4-DO5"/>
+                        <constraint firstItem="4zD-92-DsP" firstAttribute="width" secondItem="Gcp-2c-2nb" secondAttribute="width" multiplier="0.6" priority="999" id="Kba-R6-f3b"/>
+                        <constraint firstItem="eJl-nl-n01" firstAttribute="centerY" secondItem="Gcp-2c-2nb" secondAttribute="centerY" id="ngx-ml-h6C"/>
+                        <constraint firstItem="eJl-nl-n01" firstAttribute="centerX" secondItem="Gcp-2c-2nb" secondAttribute="centerX" id="wUf-R2-mi7"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="0Qq-JN-oPK"/>
+            <connections>
+                <outlet property="actionButtonHolderView" destination="A37-Ga-b5P" id="z6m-J1-JPD"/>
+                <outlet property="descriptionLabel" destination="rGK-kq-GQs" id="GoC-YW-hrH"/>
+                <outlet property="mainHolderStackView" destination="eJl-nl-n01" id="37V-kt-YFs"/>
+                <outlet property="mediaHolderView" destination="4zD-92-DsP" id="eQg-BT-OYM"/>
+                <outlet property="titleLabel" destination="C3v-7a-PoR" id="cQs-kh-3QR"/>
+            </connections>
+            <point key="canvasLocation" x="69.565217391304358" y="139.62053571428569"/>
+        </stackView>
+    </objects>
+    <resources>
+        <namedColor name="mainWhite">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

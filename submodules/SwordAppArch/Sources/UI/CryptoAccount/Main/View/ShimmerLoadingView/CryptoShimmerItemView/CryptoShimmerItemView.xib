@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CryptoShimmerItemView" customModule="SwordAppArch">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="86"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="hc8-vo-JNS">
+                    <rect key="frame" x="20" y="0.0" width="353" height="86"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l77-GV-opo">
+                            <rect key="frame" x="0.0" y="23" width="40" height="40"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="329-lg-fmy"/>
+                                <constraint firstAttribute="width" constant="40" id="jqV-vJ-l7U"/>
+                            </constraints>
+                        </view>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Ff8-1z-iK5">
+                            <rect key="frame" x="55" y="13" width="298" height="60"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4uH-5W-Yfb">
+                                    <rect key="frame" x="0.0" y="0.0" width="298" height="25"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bk1-1a-WbR">
+                                            <rect key="frame" x="0.0" y="0.0" width="178.66666666666666" height="25"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PgN-tN-Fd2">
+                                            <rect key="frame" x="178.66666666666666" y="0.0" width="30" height="25"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FPB-8S-i1h">
+                                            <rect key="frame" x="208.66666666666669" y="0.0" width="89.333333333333314" height="25"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="bk1-1a-WbR" firstAttribute="width" secondItem="4uH-5W-Yfb" secondAttribute="width" multiplier="0.6" id="5Bx-ZS-dT0"/>
+                                        <constraint firstAttribute="height" constant="25" id="Dwh-Q1-Jfh"/>
+                                        <constraint firstItem="FPB-8S-i1h" firstAttribute="width" secondItem="4uH-5W-Yfb" secondAttribute="width" multiplier="0.3" id="N5t-KG-G2T"/>
+                                    </constraints>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ys1-gc-I6v">
+                                    <rect key="frame" x="0.0" y="40" width="298" height="20"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Rg-p9-HMo">
+                                            <rect key="frame" x="0.0" y="0.0" width="59.666666666666664" height="20"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="20" id="vRb-8b-aeh"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qPz-kV-W8L">
+                                            <rect key="frame" x="59.666666666666643" y="0.0" width="189.33333333333337" height="20"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v4E-Ru-xvV">
+                                            <rect key="frame" x="249" y="0.0" width="49" height="20"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="7Rg-p9-HMo" firstAttribute="width" secondItem="Ys1-gc-I6v" secondAttribute="width" multiplier="0.2" id="USJ-H3-uKN"/>
+                                        <constraint firstItem="v4E-Ru-xvV" firstAttribute="width" secondItem="7Rg-p9-HMo" secondAttribute="width" multiplier="0.824176" id="pD2-Nu-zG7"/>
+                                    </constraints>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="86" id="TaG-lb-fcc"/>
+                        <constraint firstAttribute="height" constant="86" id="jb0-kQ-qLb"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="hc8-vo-JNS" secondAttribute="bottom" id="8b0-a2-SeH"/>
+                <constraint firstAttribute="trailing" secondItem="hc8-vo-JNS" secondAttribute="trailing" constant="20" id="FCJ-Dc-9KP"/>
+                <constraint firstItem="hc8-vo-JNS" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="LNG-fk-GI6"/>
+                <constraint firstItem="hc8-vo-JNS" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="cFE-X1-vC6"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="amountPlaceholderView" destination="7Rg-p9-HMo" id="VHN-9N-Beq"/>
+                <outlet property="cryptoIconPlaceholderView" destination="l77-GV-opo" id="nSt-Q3-hzN"/>
+                <outlet property="namePlaceholderView" destination="bk1-1a-WbR" id="e8Q-1O-lmd"/>
+                <outlet property="percentPlaceholderView" destination="v4E-Ru-xvV" id="H3A-Ib-roK"/>
+                <outlet property="pricePlaceholderView" destination="FPB-8S-i1h" id="NZQ-Ai-WXa"/>
+            </connections>
+            <point key="canvasLocation" x="50" y="21"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,9 @@
+build:cache --experimental_remote_build_event_upload=minimal
+
+# Use Bzlmod
+build --enable_bzlmod
+
+# Use apple_support Xcode toolchain
+build --apple_crosstool_top=@local_config_apple_cc//:toolchain
+build --crosstool_top=@local_config_apple_cc//:toolchain
+build --host_crosstool_top=@local_config_apple_cc//:toolchain

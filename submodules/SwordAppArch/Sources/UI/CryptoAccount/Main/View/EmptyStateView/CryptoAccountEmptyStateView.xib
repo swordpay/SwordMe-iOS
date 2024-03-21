@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Rubik-Bold.ttf">
+            <string>Rubik-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CryptoAccountEmptyStateView" customModule="SwordAppArch">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="59F-5y-1vG">
+                    <rect key="frame" x="30" y="227.33333333333334" width="333" height="397.33333333333326"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rmx-DW-Xtt" userLabel="Holder View">
+                            <rect key="frame" x="0.0" y="0.0" width="333" height="333"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="dKg-SU-tY9" userLabel="Cryptos Holder Stack VIew">
+                                    <rect key="frame" x="0.0" y="183" width="333" height="150"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="150" id="yC0-HB-qpS"/>
+                                    </constraints>
+                                </stackView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UvP-JH-1gB" userLabel="Description Label">
+                                    <rect key="frame" x="15" y="107.99999999999997" width="303" height="25"/>
+                                    <fontDescription key="fontDescription" name="Rubik-Bold" family="Rubik" pointSize="21"/>
+                                    <color key="textColor" name="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xXc-Vx-HNf" userLabel="Gradiented View" customClass="GradientedBorderedView" customModule="sword_ios" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="243" width="333" height="90"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="1000" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nb8-s0-15U" userLabel="Amount Label">
+                                    <rect key="frame" x="18" y="40.999999999999972" width="297" height="35.666666666666657"/>
+                                    <fontDescription key="fontDescription" name="Rubik-Bold" family="Rubik" pointSize="30"/>
+                                    <color key="textColor" name="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="Nb8-s0-15U" firstAttribute="centerX" secondItem="rmx-DW-Xtt" secondAttribute="centerX" id="CUw-nf-0MI"/>
+                                <constraint firstItem="xXc-Vx-HNf" firstAttribute="leading" secondItem="dKg-SU-tY9" secondAttribute="leading" id="Hdd-uY-Qlb"/>
+                                <constraint firstItem="UvP-JH-1gB" firstAttribute="top" secondItem="Nb8-s0-15U" secondAttribute="bottom" constant="31.329999999999998" id="L2i-Z1-1Oi"/>
+                                <constraint firstItem="UvP-JH-1gB" firstAttribute="leading" secondItem="rmx-DW-Xtt" secondAttribute="leading" constant="15" id="Rsf-Qs-4a2"/>
+                                <constraint firstItem="xXc-Vx-HNf" firstAttribute="height" secondItem="dKg-SU-tY9" secondAttribute="height" multiplier="0.6" id="Y2X-dW-yU3"/>
+                                <constraint firstAttribute="trailing" secondItem="dKg-SU-tY9" secondAttribute="trailing" id="dRF-nw-RFo"/>
+                                <constraint firstItem="xXc-Vx-HNf" firstAttribute="bottom" secondItem="dKg-SU-tY9" secondAttribute="bottom" id="diq-UO-geV"/>
+                                <constraint firstAttribute="bottom" secondItem="dKg-SU-tY9" secondAttribute="bottom" id="g1d-Vg-xhp"/>
+                                <constraint firstItem="UvP-JH-1gB" firstAttribute="centerX" secondItem="rmx-DW-Xtt" secondAttribute="centerX" id="gAu-Ol-7Iw"/>
+                                <constraint firstItem="Nb8-s0-15U" firstAttribute="top" secondItem="rmx-DW-Xtt" secondAttribute="top" constant="41" id="jDX-RG-YTn"/>
+                                <constraint firstItem="dKg-SU-tY9" firstAttribute="leading" secondItem="rmx-DW-Xtt" secondAttribute="leading" id="lSq-xj-Ckp"/>
+                                <constraint firstAttribute="width" relation="lessThanOrEqual" secondItem="rmx-DW-Xtt" secondAttribute="height" id="nw9-Zo-K0Z"/>
+                                <constraint firstItem="Nb8-s0-15U" firstAttribute="leading" secondItem="rmx-DW-Xtt" secondAttribute="leading" constant="18" id="puZ-UG-LLu"/>
+                                <constraint firstItem="xXc-Vx-HNf" firstAttribute="trailing" secondItem="dKg-SU-tY9" secondAttribute="trailing" id="sMp-Qg-Zan"/>
+                                <constraint firstItem="dKg-SU-tY9" firstAttribute="top" secondItem="UvP-JH-1gB" secondAttribute="bottom" constant="50" id="uLC-2v-S4M"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kE6-QY-0nj" userLabel="Go to Market Button">
+                            <rect key="frame" x="0.0" y="363" width="333" height="34.333333333333314"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            <connections>
+                                <action selector="goToMarketButtonTouchUp:" destination="iN0-l3-epB" eventType="touchUpInside" id="jcj-wQ-EJf"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="59F-5y-1vG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="ElG-gZ-Jc0"/>
+                <constraint firstItem="59F-5y-1vG" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Zc3-6Z-4MO"/>
+                <constraint firstItem="59F-5y-1vG" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="lqk-Sy-1wD"/>
+            </constraints>
+            <connections>
+                <outlet property="amountLabel" destination="Nb8-s0-15U" id="FBT-bf-kFQ"/>
+                <outlet property="borderedHolderView" destination="rmx-DW-Xtt" id="yWJ-db-uJH"/>
+                <outlet property="cryptosHolderStackView" destination="dKg-SU-tY9" id="Bhg-Rc-kk9"/>
+                <outlet property="descriptionLabel" destination="UvP-JH-1gB" id="WfL-p4-X8D"/>
+                <outlet property="goToMarketButton" destination="kE6-QY-0nj" id="jLO-N0-idx"/>
+                <outlet property="gradientedCoverView" destination="xXc-Vx-HNf" id="OIl-l0-7k7"/>
+            </connections>
+            <point key="canvasLocation" x="84" y="0.0"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="textColor">
+            <color red="0.18400000035762787" green="0.18799999356269836" blue="0.19599999487400055" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

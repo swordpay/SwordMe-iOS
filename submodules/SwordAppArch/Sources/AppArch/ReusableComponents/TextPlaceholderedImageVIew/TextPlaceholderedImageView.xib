@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TextPlaceholderedImageView" customModule="SwordAppArch">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kMp-JS-d38">
+                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xRT-oZ-u3C">
+                    <rect key="frame" x="0.0" y="0.0" width="50" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" name="mainWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="xRT-oZ-u3C" secondAttribute="trailing" id="ENN-1H-W4t"/>
+                <constraint firstAttribute="bottom" secondItem="kMp-JS-d38" secondAttribute="bottom" id="Fj3-kZ-VCf"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="xRT-oZ-u3C" secondAttribute="bottom" id="YBr-bM-mSn"/>
+                <constraint firstAttribute="trailing" secondItem="kMp-JS-d38" secondAttribute="trailing" id="cNq-K2-yV2"/>
+                <constraint firstItem="kMp-JS-d38" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="eTx-Qu-Xvh"/>
+                <constraint firstItem="xRT-oZ-u3C" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="mY7-DQ-ruU"/>
+                <constraint firstItem="kMp-JS-d38" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="vIS-2s-9it"/>
+                <constraint firstItem="xRT-oZ-u3C" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="wd4-vM-cTc"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="photoImageView" destination="kMp-JS-d38" id="kWH-Oj-ZDh"/>
+                <outlet property="titleLabel" destination="xRT-oZ-u3C" id="6kO-lx-odd"/>
+            </connections>
+            <point key="canvasLocation" x="20" y="0.0"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="mainWhite">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

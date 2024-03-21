@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Rubik-Bold.ttf">
+            <string>Rubik-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="RecentChannelItemCell" customModule="SwordAppArch">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="190"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="In8-gc-bYN">
+                    <rect key="frame" x="20" y="10" width="353" height="170"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FQP-xM-8Pc">
+                            <rect key="frame" x="146.66666666666666" y="0.0" width="60" height="60"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="c7M-f1-irc"/>
+                                <constraint firstAttribute="height" constant="60" id="fxu-xg-zeD"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vzo-RI-nL8">
+                            <rect key="frame" x="101.66666666666669" y="70" width="150" height="100"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="150" id="Twg-wu-lbg"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Rubik-Bold" family="Rubik" pointSize="15"/>
+                            <color key="textColor" name="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="In8-gc-bYN" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="LIr-aK-Qtd"/>
+                <constraint firstItem="In8-gc-bYN" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="Nvg-gF-qs8"/>
+                <constraint firstItem="In8-gc-bYN" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="pUn-PW-JMU"/>
+                <constraint firstItem="In8-gc-bYN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="sRb-T8-EhQ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imageHolderView" destination="FQP-xM-8Pc" id="upU-CK-GfE"/>
+                <outlet property="titleLabel" destination="Vzo-RI-nL8" id="SjY-sQ-fDB"/>
+            </connections>
+            <point key="canvasLocation" x="86" y="21"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="textColor">
+            <color red="0.18400000035762787" green="0.18799999356269836" blue="0.19599999487400055" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

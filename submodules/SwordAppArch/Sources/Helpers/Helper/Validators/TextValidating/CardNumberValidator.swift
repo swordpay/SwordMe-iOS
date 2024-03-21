@@ -1,0 +1,22 @@
+//
+//  CardNumberValidator.swift
+//  sword-ios
+//
+//  Created by Tigran Simonyan on 16.12.22.
+//
+
+import Foundation
+
+final class CardNumberValidator: TextValidating {
+    func validate(_ text: String?) -> Constants.Typealias.TextValidationResult {
+        guard let text = text, !text.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty else {
+            return (.failure(Constants.Localization.ValidationMessage.requiredField), text)
+        }
+
+        if text.count == 16 {
+            return (.success, text.trimmingCharacters(in: .whitespacesAndNewlines))
+        } else {
+            return (.failure(Constants.Localization.ValidationMessage.invalidCardNumber), text)
+        }
+    }
+}

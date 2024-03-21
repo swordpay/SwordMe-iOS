@@ -1,0 +1,755 @@
+/* 
+  Localizable.strings
+  sword-ios
+
+  Created by Tigran Simonyan on 13.04.22.
+  
+*/
+
+// Common
+
+"common.appName"                               = "Sword Pay";
+"common.continue"                              = "Continue";
+"common.ok"                                    = "Ok";
+"common.cancel"                                = "Cancel";
+"common.minute"                                = "min";
+"common.second"                                = "sec";
+"common.done"                                  = "Done";
+"common.close"                                 = "Close";
+"common.save"                                  = "Save";
+"common.gallery"                               = "Gallery";
+"common.camera"                                = "Camera";
+"common.upload"                                = "Upload";
+"common.remove"                                = "Remove";
+"common.call"                                  = "Call";
+"common.contacts"                              = "Contacts";
+"common.phoneNumber"                           = "Phone Number";
+"common.phone"                                 = "Phone";
+"common.website"                               = "Website";
+"common.date"                                  = "Date";
+"common.time"                                  = "Time";
+"common.search"                                = "Search";
+"common.loading"                               = "Loading";
+"common.yes"                                   = "Yes";
+"common.no"                                    = "No";
+"common.delete"                                = "Delete";
+"common.placeholder"                           = "Placeholder";
+"common.change"                                = "Change";
+"common.edit"                                  = "Edit";
+"common.apply"                                 = "Apply";
+"common.message"                               = "Message";
+"common.show"                                  = "Show";
+"common.email"                                 = "Email";
+"common.password"                              = "Password";
+"common.firstName"                             = "First Name";
+"common.lastName"                              = "Last Name";
+"common.fullName"                              = "Full Name";
+"common.venue"                                 = "Venue";
+"common.send"                                  = "Send";
+"common.create"                                = "Create";
+"common.confirm"                               = "Confirm";
+"common.congratulations"                       = "Congratulations";
+"common.information"                           = "Information";
+"common.code"                                  = "Code";
+"common.attention"                             = "ATTENTION!!!";
+"common.enable"                                = "Enable";
+"common.disable"                               = "Disable";
+"common.unableToHandleAction"                  = "Unable to handle action";
+"common.verification"                          = "Verification";
+"common.version"                               = "Version";
+"common.required"                              = "Required";
+"common.answer"                                = "Answer";
+"common.other"                                 = "Other "; // DON`T remove this space
+"common.submit"                                = "Submit";
+"common.quiz"                                  = "Quiz";
+"common.next"                                  = "Next";
+"common.start"                                 = "Start";
+"common.scan"                                  = "Scan";
+"common.today"                                 = "Today";
+"common.pay"                                   = "Pay";
+"common.request"                               = "Request";
+"common.cash"                                  = "Cash";
+"common.crypto"                                = "Crypto";
+"common.details"                               = "Details";
+"common.addCard"                               = "Add card";
+"common.country"                               = "Country";
+"common.login"                                 = "Log in";
+"common.verify"                                = "Verify";
+"common.share"                                 = "Share";
+"common.faceID"                                = "FaceID";
+"common.touchID"                               = "TouchID";
+"common.cardNumber"                            = "Card number";
+"common.expiryDate"                            = "Expiry date";
+"common.cvv"                                   = "CVV";
+"common.refresh"                               = "Refresh";
+"common.buy"                                   = "Buy";
+"common.sell"                                  = "Sell";
+"common.converter"                             = "Converter";
+"common.convert"                               = "Convert";
+"common.allowAccess"                           = "Allow Access";
+"common.exchange"                              = "Exchange";
+"common.recents"                               = "Recents";
+"common.print"                                 = "Print";
+"common.accept"                                = "Accept";
+"common.decline"                               = "Decline";
+"common.fiat"                                  = "Fiat";
+"common.you"                                   = "You";
+"common.your"                                  = "Your";
+"common.reject"                                = "Reject";
+"common.rejected"                              = "Rejected";
+"common.users"                                 = "People, Business/Creator";
+"common.warning"                               = "Warning";
+"common.feed"                                  = "Feed";
+"common.scanCode"                              = "Scan Code";
+"common.swordMe"                               = "Sword me";
+"common.transfer"                              = "Transfer";
+"common.requested"                             = "Requested";
+"common.sent"                                  = "Sent";
+"common.received"                              = "Received";
+"common.fileShare"                             = "FileShare";
+"common.completed"                             = "Completed";
+"common.from"                                  = "From";
+"common.to"                                    = "To";
+"common.deposit"                               = "Deposit";
+"common.exTransfer"                            = "Ex. Transfer";
+"common.connecting"                            = "Connecting...";
+"common.connectionLost"                        = "Connection Lost";
+"common.amount"                                = "Amount";
+"common.name"                                  = "Name";
+"common.skip"                                  = "Skip";
+"common.network"                               = "Network";
+"common.saveAsImage"                           = "Save as image";
+"common.shareAddress"                          = "Share Address";
+"common.withdrawal"                            = "Withdraw";
+
+"common.payOrRequest"                          = "Pay or Request";
+"common.photoEditOption.alert.title"           = "Update Type";
+"common.photoEditOption.alert.message"         = "Please choose photo update type";
+"common.uploadPhoto"                           = "Upload Photo";
+"common.uploadPhotoType"                       = "Please choose method";
+"common.errorMessage"                          = "Something went wrong.\nPlease try later";
+
+// Onboarding
+
+"onboarding.tutorial.title1"                    = "File$har€";
+"onboarding.tutorial.title2"                    = "Send or Request";
+"onboarding.tutorial.title3"                    = "Anytime";
+
+"onboarding.tutorial.description1"            = "Send or Receive, Locked Confidential Private Files, Content, Documents.";
+"onboarding.tutorial.description2"            = "Pay, Send, Exchange and Withdraw.";
+"onboarding.tutorial.description3"            = "Send Money, Crypto. Anytime. Anywhere.";
+
+"onboarding.tutorial.skipToSignIn"            = "Skip";
+
+// Authentication
+"authentication.phoneNumber.reg.description"                        = "Your sword is almost ready";
+"authentication.login.userExistsInfo"                               = "Seems there is user with that phone number. Try to login.";
+"authentication.login.description"                                  = "Please enter the email or phone associated with your account";
+"authentication.createAccount.nameInfo"                             = "First and last names should match your official ID";
+"authentication.createAccount.usernameError.title"                  = "Username is not available";
+"authentication.createAccount.usernameError.message"                = "Please choose another one";
+"authentication.userCredentials.emailError.title"                   = "Email is not available";
+"authentication.userCredentials.emailError.message"                 = "Email registered in our service. Try to login with that email or contact to our support.";
+"authentication.accountType.title"                                  = "To Protect \nTo Provide \nTo Conquer";
+"authentication.accountType.pickerTitle"                            = "How will you use your\nSWORD?";
+"authentication.accountType.personal"                               = "Personal";
+"authentication.accountType.business"                               = "Business";
+"authentication.accountType.creator"                                = "Creator";
+"authentication.accountType.getStarted"                             = "Get started";
+"authentication.login"                                              = "Log In";
+"authentication.logOut"                                             = "Log Out";
+"authentication.phoneNumber.placeholder"                            = "We’ll send you a code to confirm";
+"authentication.login.phoneOrEmail.placeholder"                     = "Write your phone number or email";
+"authentication.firstName.placeholder"                              = "Ex: Rachel Baker";
+"authentication.lastName.placeholder"                               = "Ex: Rachel Baker";
+"authentication.userName.placeholder"                               = "@rachel_b";
+"authentication.createAccount.typeHere"                             = "Type here";
+"authentication.password.placeholder"                               = "Min 8 charcters, symbols, numbers";
+"authentication.email.placeholder"                                  = "Ex: rachel@gmail.com";
+"authentication.phoneNumber.sendCode"                               = "Send Code";
+"authentication.phoneNumber.title"                                  = "Enter your phone number";
+"authentication.phoneNumber.info"                                   = "We’ll send you a code to confirm it’s you";
+
+"authentication.phoneNumber.description"                            = "By tapping Continue, you confirm that you are authorized to use the number entered and agree to receive SMS texts to verify your own number. Carrier fees may apply.";
+"authentication.phoneNumber.twoFactorAuthentication.title"          = "Enter your phone number ";
+"authentication.phoneNumber.twoFactorAuthentication.description"    = "Choose the number you will receive your verification code on.";
+
+"authentication.country.title"                                      = "Country \nof Residence";
+"authentication.country.description"                                = "The terms and services which apply to you, will depend on your country of residence";
+"authentication.countryPicker.emptyState.title"                     = "The country you entered cannot be found";
+"authentication.countryPicker.emptyState.description"               = "There is no result";
+
+"authentication.verifyPhoneNumber.title"                            = "Verify phone number";
+"authentication.verifyPhoneNumber.twoFactorAuthentication.title"    = "Enter Code";
+
+"authentication.verifyPhoneNumber.mainTitle"                        = "Enter your the one time code sent on %@";
+"authentication.verifyPhoneNumber.description"                      = "Please enter the code you received on your mobile";
+    
+"authentication.verifyPhoneNumber.resendCode"                       = "Send the code again";
+"authentication.firstName"                                          = "First Name";
+"authentication.lastName"                                           = "Last Name";
+"authentication.userName"                                           = "Username";
+"authentication.createAccount.title"                                = "Create your account";
+"authentication.userCredentials.title"                              = "Please fill out your details below";
+"authentication.signInToYourAccount"                                = "Sign in to your account";
+"authentication.forgotPassword"                                     = "Forgot password";
+"authentication.signIn"                                             = "Sign In";
+"authentication.signUp"                                             = "Sign Up";
+"authentication.signOut"                                            = "Sign out";
+"authentication.dontHaveAnAccount"                                  = "Don't have an account?";
+"authentication.alreadyHaveAnAccount"                               = "Already have an account?";
+"authentication.goToLogin"                                          = "Login";
+"authentication.currentPassword"                                    = "Current Password";
+"authentication.newPassword"                                        = "New Password";
+"authentication.retypeNewPassword"                                  = "Re-type New Password";
+"authentication.confirmPassword"                                    = "Confirm Password";
+"authentication.resetPassword"                                      = "Reset password";
+"authentication.repeatPassword"                                     = "Repeat Password";
+"authentication.updatePassword"                                     = "Update Password";
+"authentication.createAccount"                                      = "Create Account";
+"authentication.createYourAccount"                                  = "Create your account";
+"authentication.backToSignIn"                                       = "Back To Sign In";
+"authentication.termsAndConditions"                                 = "I am at least 18 years old and agree to the terms & conditions and privacy policy";
+"authentication.privacyPolicy"                                      = "privacy policy";
+"authentication.terms"                                              = "terms & conditions";
+"authentication.intergiro.termsAndConditions"                       = "Please check to agree to Payment Services T&C and Intergiro Privacy Policy";
+"authentication.intergiro.privacyPolicy"                            = "Intergiro Privacy Policy";
+"authentication.intergiro.terms"                                    = "Payment Services T&C";
+
+"authentication.forgotPassword.title"                               = "Forgot your password?";
+"authentication.forgotPassword.description"                         = "Please enter the Phone Number associated with your account";
+"authentication.forgotPassword.emailDescription"                    = "Please enter the Email associated with your account";
+"authentication.forgotPassword.alert.message"                       = "We sent link to your email. Please check!";
+"authentication.resetPassword.confirmNewPassword"                   = "Confirm new password";
+"authentication.resetPassword.passwordHasBeenChanged"               = "Your password has been changed";
+"authentication.resetPassword.resetPasswordDescription"             = "Please enter your New Password";
+"authentication.accountCreation.success.message"                    = "Your account has been created, check your email to verify your email address.";
+"authentication.userActivation.alert.message"                       = "Your account has been activated";
+
+"authentication.country.signUpSecurely"                             = "Sign up securely";
+"authentication.country.privacy"                                    = "Our Customer Privacy Notice can be viewed here";
+"authentication.country.privacy.here"                               = "here";
+
+"authentication.birthDate.title"                                    = "Date of birth";
+"authentication.birthDate.description"                              = "As stated on your official ID";
+"authentication.birthDate.placeholder"                              = "MM/DD/YYYY";
+"authentication.resetPassword.successMessage"                       = "Your password has been successfully reset";
+"authentication.resetPassword.failMessage"                          = "Password reset has been failed";
+"authentication.registrationCompletion.title"                       = "Welcome to your \nKingdom!";
+"authentication.registrationCompletion.description"                 = "Your account is successfully  \ncreated.";
+
+// MultiActionedInfo
+"multiActionedInfo.notification.title"                                       = "Enable Notifications";
+"multiActionedInfo.notification.description"                                 = "Timely alerts and updates in your Kingdom. You can customize these settings anytime in the app's notification preferences.";
+"multiActionedInfo.notification.enableNotificationsButton.title"             = "Enable Notifications";
+"multiActionedInfo.notification.maybeLaterButton.title"                      = "Maybe later";
+
+"multiActionedInfo.addCard.title"                                            = "Your account is set up";
+"multiActionedInfo.addCard.description"                                      = "Now it is time to attach a card. This is obligatory to be able to do cash transaction. You can skip and do it later.";
+"multiActionedInfo.addCard.attachCardButton.title"                           = "Attach card";
+"multiActionedInfo.addCard.skipToPlatformButton.title"                       = "Skip to Platform";
+
+"multiActionedInfo.addCardCompletion.title"                                  = "Great! Last step: \nVerify your identity";
+"multiActionedInfo.addCardCompletion.topDescription"                         = "For the security & privacy of your personal data";
+"multiActionedInfo.addCardCompletion.bottomDescription"                      = "I.D. Verification is needed to enter your Kingdom.";
+
+
+// AddCard
+
+"addCard.screenTitle"                        = "Attach your card";
+"addCard.screenDescription"                  = "We guarantee secure transactions.";
+"addCard.title.nameOnCard"                   = "Name on card";
+"addCard.title.cardNumber"                   = "Card number";
+"addCard.title.cardExpirationDate"           = "Expires";
+"addCard.title.cardCVV"                      = "CVV";
+
+"addCard.placeholder.nameOnCard"             = "Ex: Rachel Baker";
+"addCard.placeholder.cardNumber"             = "Ex: 1234 5678 9011 1213";
+"addCard.placeholder.cardExpirationDate"     = "Expires MM/YY";
+"addCard.placeholder.cardCVV"                = "";
+
+"addCard.addAnotherCard.button.title"       = "Add another card";
+
+
+// Tab bar
+
+"tabbar.home.title"                         = "Home";
+"tabbar.fiat.title"                         = "Account";
+"tabbar.fileShare.title"                    = "File Share";
+"tabbar.crypto.title"                       = "Crypto";
+"tabbar.me.title"                           = "Me";
+
+// Channels
+"channels.title"                                        = "Channels";
+"channels.createChannel"                                = "Create Channel";
+"channels.emptyState.title"                             = "Connect with your \nKingdom";
+"channels.emptyState.description"                       = "Tap on the \nSend or Request buttons or share files and Request through FIleShare.";
+"channels.emptyState.inviteFriendsTitle"                = "Invite Friends to your Kingdom";
+"channels.emptyState.syncContacts.title"                = "Sync Contacts";
+"channels.emptyState.inviteFriends.title"               = "Invite Friends";
+"channels.publicChannel"                                = "Public Channel";
+"channels.createNewChannel"                             = "Create new channel";
+"channels.directMessage"                                = "Direct Message";
+"channels.groupChannel"                                 = "Group Channel";
+"channels.newDM"                                        = "New DM";
+"channels.newGroup"                                     = "New Group";
+"channels.searchPlaceholder"                            = "Search by name, username etc";
+"channels.channelName"                                  = "Channel name";
+"channels.newGroup.title"                               = "Create a group to pay or request from multiple people";
+"channels.chat.securityDescription"                     = "Messages are end-to-end encrypted. No one outside of this channel can read them. Tap to learn more.";
+"channels.chat.chatDescription"                         = "will see this channel once you send the first message. Otherwise the channel will be deleted once you leave it.";
+"channels.chat.messagePlaceholder"                      = "Type message";
+"channels.payment.cash.placeholder"                     = "Ex: 300";
+"channels.payment.crypto.placeholder"                   = "Ex: 0.04";
+"channels.payment.notes.placeholder"                    = "What is this for?";
+"channels.payment.requestFrom"                          = "Request from";
+"channels.payment.everyoneInGroup"                      = "Everyone in the group";
+"channels.reqeustDetails.title"                         = "Request Details";
+"channels.paymentDetails.title"                         = "Payment Details";
+"channels.requestDetails.closeRequest"                  = "Close Request";
+"channels.reqeustDetails.noPayment"                     = "No payment yet";
+"channels.reqeustDetails.sendReminder"                  = "Send Reminder";
+"channels.requestDetails.closedRequest"                 = "Closed Request";
+"channels.requestDetails.friends"                       = "Friends";
+"channels.unknownUser"                                  = "Unknown User";
+
+"channels.inviteFriends.contactAccess.title"            = "Access to Contacts";
+"channels.inviteFriends.contactAccess.description"      = "Please allow Sword Pay access to your phonebook to seamlessly find all your friends";
+"channels.inviteFriends.contactAccess.goToSettings"     = "Go to Settings";
+"channels.emptyLastMessage.description"                 = "You don't have any conversation yet. Start now?";
+
+"channels.chat.payment.receivedFrom"                    = "%@ received from %@";
+"channels.chat.payment.rejectedRequest"                 = "%@ rejected %@ request";
+"channels.chat.payment.sentARequest"                    = "%@ sent a request";
+"channels.chat.payment.paymentFrom"                     = "%@ sent";
+
+"channels.channelItem.payment.paid"                     = "Paid %@";
+"channels.channelItem.payment.requested"                = "Requested %@";
+"channels.channelItem.payment.rejected"                 = "Rejected %@ request";
+"channels.selectedUsers"                                = "Selected Users";
+"channels.pickerEmptyStateTitle"                        = "The user you entered cannot be found";
+"channels.sendOrReqeust"                                = "Send or Request";
+"channels.groupName"                                    = "Group Name";
+"channels.groupPhoto"                                   = "Group Photo";
+"channels.topUpTilte"                                   = "Please top up your Sword balance, to \nSend Amount";
+
+// FiatAccount
+
+"fiatAccount.emptyState.error.title"                            = "Something went wrong";
+"fiatAccount.emptyState.error.description"                      = "Something is wrong with your account. \nPlease try later";
+"fiatAccount.emptyState.notSupportedCountry.title"              = "Your Crypto Sword\nis ready.\n\nYour Bank Sword\nis coming soon!";
+"fiatAccount.emptyState.notSupportedCountry.description"        = "We will add your country as soon as possible";
+"fiatAccount.emptyState.emptyCards.title"                       = "You don’t have any cards yet";
+"fiatAccount.emptyState.emptyCards.description"                 = "To get a card please press \n\"Add Card\" button";
+"fiatAccount.emptyState.emptyTransactions.title"                = "There are no transactions for this card";
+"fiatAccount.title"                                             = "My Money Account";
+"fiatAccount.expiresOn"                                         = "Exp.";
+"fiatAccount.beneficiary"                                       = "Beneficiary";
+"fiatAccount.IBAN"                                              = "IBAN";
+"fiatAccount.BIC"                                               = "BIC";
+"fiatAccount.euro"                                              = "Euro";
+"fiatAccount.addCard"                                           = "Add card";
+"fiatAccount.details"                                           = "Details";
+"fiatAccount.seeMore"                                           = "See more";
+"fiatAccount.hideDetails"                                       = "Hide Details";
+"fiatAccount.showDetails"                                       = "Show Details";
+"fiatAccount.resetPin"                                          = "Reset Pin";
+"fiatAccount.unfreeze"                                          = "Unfreeze";
+"fiatAccount.freeze"                                            = "Freeze card";
+"fiatAccount.cardSettings"                                      = "Card Settings";
+"fiatAccount.block"                                             = "Block card";
+"fiatAccount.stole"                                             = "Mark as stolen";
+"fiatAccount.lost"                                              = "Mark as lost";
+"fiatAccount.activate"                                          = "Activate";
+"fiatAccount.reportIssue"                                       = "Report Issue";
+"fiatAccount.newCard.physicalCard.title"                        = "Physical debit card";
+"fiatAccount.newCard.virtualCard.title"                         = "Virtual debit card";
+"fiatAccount.physical"                                          = "Physical";
+"fiatAccount.virtual"                                           = "Virtual";
+"fiatAccount.freezeCard.alertMessage"                           = "To use the card You have to activate it after freezing. Freeze the card?";
+"fiatAccount.cards.lastTransactions"                            = "Last Transactions";
+
+"fiatAccount.newCard.physicalCard.description"                  = "Choose your card design and get it delivered";
+"fiatAccount.newCard.physicalCard.deactivateStateDescription"   = "To have physical cards order active need to have on balance at least €2";
+"fiatAccount.newCard.virtualCard.description"                   = "Get a Virtual Sword Card instantly!";
+"fiatAccount.newCard.cardInfo"                         	        = "Card info";
+"fiatAccount.deliveryAddress.title"                    	        = "Delivery address";
+"fiatAccount.deliveryAddress.selectCountry"            	        = "Select Country";
+"fiatAccount.deliveryAddress.streetPlaceholder"        	        = "Ex: Regeringsgatan 59";
+"fiatAccount.deliveryAddress.cityPlaceholder"          	        = "Ex: Stockholm";
+"fiatAccount.deliveryAddress.regionPlaceholder"        	        = "Region";
+"fiatAccount.deliveryAddress.postalCodePlaceholder"    	        = "Ex: 12345";
+"fiatAccount.deliveryAddress.street"                   	        = "Street %d";
+"fiatAccount.deliveryAddress.city"                     	        = "City";
+"fiatAccount.deliveryAddress.region"                   	        = "Region";
+"fiatAccount.deliveryAddress.postalCode"               	        = "Postal code";
+"fiatAccount.emptyCards.title"                         	        = "You don't have cards yet";
+"fiatAccount.outdatedAccountInfo.title"                         = "Needed your consent for account \nactivation";
+"fiatAccount.outdatedTransactions.title"                        = "Needed your consent for transactions access";
+
+"fiatAccount.externalTransfer.title"                            = "External Transfer";
+"fiatAccount.externalTransfer.receiverName"                     = "Receiver Name";
+"fiatAccount.externalTransfer.amount"                           = "Amount";
+"fiatAccount.externalTransfer.amountPlaceholder"                = "Ex: 300";
+"fiatAccount.physicalCard.additinalFee"                         = "€2 needed in Account to order";
+"fiatAccount.physicalCard.paymentRequired"                      = "Payment Required";
+"fiatAccount.addFunds"                                          = "ADD FUNDS";
+"fiatAccount.topUpAmount"                                       = "Top up amount";
+"fiatAccount.topUp"                                             = "Top Up";
+"fiatAccount.cards.actionBlocked"                               = "Action Blocked";
+"fiatAccount.cards.pendingCardDescription"                      = "You have pending card so you cant create new one before activation";
+"fiatAccount.intergiro.termsAndConditions"                      = "Intergiro Terms & Conditions and Privacy Policy";
+
+"fiatAccount.cardStatus.frozen.success"                         = "Card has been successfully frozen";
+"fiatAccount.cardStatus.frozen.failed"                          = "Card freezing has been failed";
+
+"fiatAccount.cardStatus.blocked.success"                        = "Card has been successfully blocked";
+"fiatAccount.cardStatus.blocked.failed"                         = "Card blocking has been failed";
+
+"fiatAccount.cardStatus.stolen.success"                         = "Card has been successfully marked as stolen";
+"fiatAccount.cardStatus.stolen.failed"                          = "Card status change has been failed";
+
+"fiatAccount.cardStatus.lost.success"                        = "Card has been successfully marked as lost";
+"fiatAccount.cardStatus.lost.failed"                         = "Card status change has been failed";
+
+// CryptoAccount
+
+"cryptoAccount.title"                                       = "Crypto";
+"cryptoAccount.yourCryptoBalance"                           = "Crypto Account";
+"cryptoAccount.totalReturn"                                 = "Total return";
+"cryptoAccount.topCryptos"                                  = "Top Crypto";
+"cryptoAccount.exploreMoreCrypto"                           = "Explore more crypto";
+"cryptoAccount.emptyState.description"                      = "Buy your first crypto";
+"cryptoAccount.goToMarket"                                  = "Go to Market";
+"cryptoAccount.market"                                      = "Market";
+"cryptoAccount.past24Hours"                                 = "Past 24 hours";
+"cryptoAccount.your"                                        = "Your";
+"cryptoAccount.euroValue"                                   = "Euro value";
+"cryptoAccount.search.placeholder"                          = "Ex: bitcoin, btc";
+"cryptoAccount.depositAddress"                              = "Deposit Address";
+"cryptoAccount.minAmount"                                   = "Min Amount";
+"cryptoAccount.maxAmount"                                   = "Max Amount";
+"cryptoAccount.availableAmount"                             = "Available Amount";
+"cryptoAccount.convertingRange.title"                       = "Converting available ranges";
+"cryptoAccount.externalTransfer"                            = "External Transfer";
+"cryptoAccount.userCryptoBalance"                           = "Use Crypto Balance";
+"cryptoAccount.userCashBalance"                             = "Use Cash Balance";
+"cryptoAccount.userCashBalance"                             = "Use Cash Balance";
+"cryptoAccount.totalReturnInfo"                             = "Coin price change percentage during the past 24 hours";
+"cryptoAccount.withdrawAddress.emptyStateTitle"             = "You don't have saved addresses";
+"cryptoAccount.withdrawAddress.amountToSend"                = "Amount to send";
+"cryptoAccount.withdrawAddress.externalWalletAddress"       = "External wallet address";
+"cryptoAccount.withdrawAddress.externalWalletAddressName"   = "External wallet address name";
+"cryptoAccount.withdrawAddress.youCanSend"                  = "You can send";
+"cryptoAccount.withdrawAddress.started"                     = "Started";
+"cryptoAccount.withdrawAddress.upTo"                        = "Up to";
+"cryptoAccount.withdrawAddress.additionalFee"               = "Additional fee";
+"cryptoAccount.withdrawAddress.memo"                        = "Memo";
+"cryptoAccount.withdrawAddress.memo.provideMemo"            = "Provide memo";
+"cryptoAccount.withdrawAddress.memo.invalidMemo"            = "Invalid memo";
+"cryptoAccount.withdrawAddress.memo.invalidMemoMessage"     = "Inserted memo was invalid";
+
+"cryptoAccount.convertedAmount"                             = "Converted amount";
+"cryptoAccount.cryptoExchange.successMessage"               = "Your exchange has been completed successfully";
+"cryptoAccount.cryptoExchange.failMessage"                  = "Your exchange has been failed";
+"cryptoAccount.buyOrSell.invalidAmount"                     = "Invalid Amount";
+"cryptoAccount.buyOrSell.invalidRange"                      = "Amount is out of correct range";
+"cryptoAccount.buyOrSell.moreThanCurrentBalance"            = "Amount is greater than your current balance";
+"cryptoAccount.buyOrSell.cryptoRanges"                      = "Coin Ranges";
+"cryptoAccount.emptyStateTitle"                             = "The coin you entered cannot be found";
+"cryptoAccount.withdraw.address.saveAddress"                = "Save address";
+"cryptoAccount.withdraw.address.provideAddressName"                             = "Provide name for address";
+"cryptoAccount.withdraw.address.invalidAddressName"         = "Invalid address name";
+
+"cryptoAccount.chooseNetwork"                               = "Choose Network";
+"cryptoAccount.chooseNetwork.info"                          = "Please note that only supported networks are shown, if you deposit via another network your assets may be lost.";
+"cryptoAccount.depositAddress.info"                          = "Send only %@ to this deposit address. The address does not support deposit of non-fungible token.";
+
+// Pay Or Request
+
+"payOrRequest.emptyStateView.description"                   = "Actions are temporarily unavailable";
+"payOrRequest.unavailableBalance.title"                     = "Unavailable balance";
+"payOrRequest.unavailableBalance.description"               = "You dont have enought money or crypto on your accounts";
+"payOrRequest.exploreCryptoButton.title"                    = "Explore Crypto";
+"payOrRequest.requestInfo.requestFrom"                      = "Request from";
+
+// Validation
+
+"validationMessage.invalidCredential"                   = "Invalid credential";
+"validationMessage.emptyText"                           = "Empty text";
+"validationMessage.invalidTextLenght"                   = "Invalid Text Lenght";
+"validationMessage.emptyFirstName"                      = "Enter your first name";
+"validationMessage.emptyLastName"                       = "Enter your last name";
+"validationMessage.emptyUserName"                       = "Enter your user name";
+"validationMessage.invalidUsername"                     = "Username should contain letters, numbers and dashes";
+"validationMessage.charectersLenght"                    = "Number of the characters must be in the range of 2 to 50";
+"validationMessage.userNamesLenght"                     = "Number of the characters must be in the range of 2 to 40";
+"validationMessage.invalidName"                         = "Name can contain letters, dashes or apostrophes";
+"validationMessage.emptyEmail"                          = "Email is missing";
+"validationMessage.invalidEmail"                        = "Please insert valid email";
+"validationMessage.emptyPhoneNumbaer"                   = "Phone number is missing";
+"validationMessage.invalidPhoneNumber"                  = "Please insert valid phone number";
+"validationMessage.invalidPasswordLenght"               = "Password lenght should be in the range of 8 to 50";
+"validationMessage.emptyPassword"                       = "Password is missing";
+"validationMessage.invalidPassword"                     = "Password should contains min 8 charcters and at least one uppercased, symbols, numbers";
+"validationMessage.mainPasswordIsEmpty"                 = "Main password is empty";
+"validationMessage.passwordsAreDifferent"               = "Passwords are different";
+"validationMessage.requiredField"                       = "The field is required";
+"validationMessage.requiredField.range"                 = "Invalid Lenght. Text should be in range from %d to %d";
+
+"validationMessage.emptyCardHolderName"                 = "Name on card can't be empty";
+"validationMessage.invalidCardHolderName"               = "Name on card should contain only letters";
+"validationMessage.emptyCardNumber"                     = "Card number can't be empty";
+"validationMessage.invalidCardNumber"                   = "Card number should contain 16 numbers";
+"validationMessage.emptyCardExpirationDate"             = "Card expiration date can't be empty";
+"validationMessage.invalidCardExpirationDate"           = "Invalid card expiration date";
+"validationMessage.emptyCVV"                            = "Card CVV can't be empty";
+
+"validationMessage.birthDate.invalidDate"               = "Invalid Date";
+"validationMessage.birthDate.notAnAdult"                = "You must be adult";
+
+"validationMessage.withdrawAddress.invalidAddress"      = "Invalid withdraw address";
+
+"validationMessage.externalTransfer.invalidAmount"                  = "Invalid Amount";
+"validationMessage.externalTransfer.invalidIntergiroAmount"         = "Amount should be greater than or equal to 0.01 and precision can have up to 2 symbols";
+"validationMessage.externalTransfer.invalidAmount.max"              = "Amount is greater than %.2f(Max Amount)";
+"validationMessage.externalTransfer.invalidAmount.min"              = "Amount is less than %.2f(Min Amount)";
+"validationMessage.externalTransfer.receiverName.lenght"            = "Field maximum lenght is 35";
+"validationMessage.externalTransfer.receiverName.invalidSymbols"    = "Text can contain letters, numbers, spaces and following symbols: ?:()/.,+-";
+
+"validationMessage.acceptPayemnt.validationFailed"                  = "Validation Failed";
+"validationMessage.acceptPayemnt.insufficientFunds"                 = "Insufficient funds";
+"validationMessage.acceptPayemnt.participantsMinAmount"             = "Amount should be greater than or equal to participants count(%d) multiplied by min value(%.2f)";
+"validationMessage.acceptPayemnt.requestAmountInvalidRange"         = "Requested amount is not in acceptable range";
+"validationMessage.acceptPayemnt.paymentAmountFiatInvalidRange"     = "Payment amount is not not in range from 0.01 to 20000";
+"validationMessage.acceptPayemnt.paymentAmountGreaterThanMax"       = "Payment amount is greater than acceptable range for the coin";
+"validationMessage.acceptPayemnt.insufficientFundsForMinValue"      = "Payment amount is less than acceptable range for the coin and minimum acceptable amount greater than your current balance";
+"validationMessage.acceptPayemnt.useMinimumAmount"                  = "Requsted amount is less than acceptable range for the coin.Do you want to make reqeust with minimum value %@";
+
+// Error
+"error.generic.title"                                       = "Unknown Error";
+"error.generic.message"                                     = "Something went wrong please try later";
+        
+"error.network.title"                                       = "Network Error";
+"error.network.message.invalidResponse"                     = "Invalid Response";
+"error.network.message.unacceptableStatusCode"              = "Unacceptable Status Code";
+"error.network.message.internalServerError"                 = "Data Fetching Failed. Please try later";
+"error.network.message.authorizationExpired"                = "Your autorization has been expired.\nPlease log in again.";
+"error.network.message.errorParsingFailed"                  = "Something went wrong";
+"error.network.message.olderAppVersion"                     = "The app version is too old. You must update the version in order to use it.";
+"error.network.message.unknown"                             = "Unknown error has been occurred";
+        
+"error.parsing.title"                                       = "Parsing error";
+"error.parsing.message"                                     = "Failed to parse data";
+        
+"error.biometric.title"                                     = "Biometric authentication error";
+"error.biometric.permission.evaluation.fail.message"        = "Failed To evaluate permission";
+"error.biometric.authentication.failed"                     = "Authentication failed";
+"error.biometric.authentication.canceled"                   = "Authentication canceled";
+
+// Screen Empty State
+
+"screen.empty.state.default"                      = "Ooops, content is missing :((";
+"screen.empty.state.events"                       = "No events to show";
+"screen.empty.state.tickets"                      = "No tickets to show.";
+"screen.empty.state.notifications"                = "No notifications to show";
+
+// System Services
+
+"system.services.camera.title"              = "Enable Camera";
+"system.services.camera.description"        = "Enable your camera access to let us complete your face enrollment process.";
+"system.services.action.title"              = "Enable";
+"system.services.internet.description"      = "No Internet Connection";
+
+// Profile
+
+"profile.title"                                                 = "Your Account";
+"profile.accountAndSettings"                                    = "Account & Settings";
+"profile.main.transactionsHistory"                              = "Transactions History";
+"profile.main.myCard"                                           = "My cards";
+"profile.main.myAccount"                                        = "Fiat account";
+"profile.main.myFriends"                                        = "My friends";
+"profile.main.settings"                                         = "Settings";
+"profile.security.biometricAuthentication.reason"               = "Enable biometric authentication fot your transactions security";
+"profile.security.biometricAuthentication.description"          = "Enable biometric authentication for your transactions";
+
+"profile.editProfile.title"                                     = "Edit Profile";
+"profile.transactionsHistory.transactions"                      = "Transactions";
+"profile.settings.account"                                      = "Account";
+"profile.settings.contactInfo"                                  = "Contact info";
+"profile.settings.passwordAndSecurity"                          = "Security & Password";
+"profile.settings.aboutUs"                                      = "About Us";
+"profile.settings.contactUs"                                    = "Contact Us";
+"profile.settings.privacyPolicy"                                = "Privacy Policy";
+"profile.settings.termsAndConditions"                           = "Terms & Conditions";
+"profile.settings.personalInformation"                          = "Personal Information";
+"profile.settings.personalInformationTitle"                     = "The Information is read only";
+"profile.passwordAndSecurity.changePassword"                    = "Change password";
+"profile.passwordAndSecurity.twoFactorAuthentication"           = "Two-factor authentication";
+"profile.passwordAndSecurity.deleteAccount"                     = "Close Sword Account";
+"profile.passwordAndSecurity.deleteAccount.message"             = "Before deleting account please check balances on your crypto and fiat accounts";
+"profile.twoFactorAuthentication.textMessage"                   = "Text Message";
+"profile.twoFactorAuthentication.authenticationApp"             = "Authentication app";
+"profile.authenticationApp.title"                               = "Set up via Third Party Authentification";
+"profile.authenticationApp.description"                         = "Please use your Authentication app to scan the QR code.";
+"profile.authenticationApp.setupOnThisDevice"                   = "Set up on same device";
+"profile.authenticationApp.activationCodeDescription"           = "Or enter this code into your authentication app";
+"profile.newCard.cardNamePlaceholder"                           = "Card Name";
+"profile.newCard.createCard"                                    = "Create card";
+"profile.menuAction.copyPhoneNumber"                            = "Copy Phone Number";
+"profile.menuAction.copyUsername"                               = "Copy Username";
+"profile.menuAction.copyEmail"                                  = "Copy email";
+"profile.changePassword.successMessage"                         = "Your password has been successfully changed";
+"profile.changePassword.failMessage"                            = "Password change has been failed";
+"profile.changePassword.theSamePassword"                        = "It seems you've entered the same password as before. For security reasons, please provide a new password that is distinct from your previous one";
+"profile.changePassword.oldPassword.placeholder"                = "Old Password";
+"profile.changePassword.newPassword.placeholder"                = "New Password";
+"profile.changePassword.repeatNewPassword.placeholder"          = "Repeat New Password";
+"profile.accountDeactivation.success"                           = "Account successfully deactivated";
+"profile.accountDeactivation.failed"                            = "Account deactivation failed";
+"profile.verifyEmail.successMessage"                            = "Verification email has been sent. Please check your email to verify your email address";
+"profile.verifyEmail.failMessage"                               = "Failed to send verification email. Please try later";
+"profile.verifyEmailToken.successMessage"                       = "Your email has been successfully verified";
+"profile.verifyEmailToken.failMessage"                          = "Your email verification has been failed";
+"profile.shareQR.emailSubject"                                  = "My account QR code";
+"profile.shareQR.emailBody"                                     = "You can use this QR to start conversation with me";
+"profile.inviteFriends.emptyScreen.title"                       = "Your contacts list is empty";
+// Error Fields
+
+"phone"                                                         = "Phone Number";
+"login"                                                         = "Login";
+"password"                                                      = "Password";
+"firstName"                                                     = "First Name";
+"lastName"                                                      = "Last Name";
+"username"                                                      = "Username";
+"birthday"                                                      = "Date of birth";
+"type"                                                          = "Account type";
+
+// Error Messages
+
+"err_undefined"                                                 = "Something went wrong";
+"err_user_with_email_not_found"                                 = "There is no user with that email";
+"err_user_unauthorized"                                         = "Your authorization has been expired.";
+"err_code_invalid"                                              = "Invalid verification code";
+"err_code_not_exists"                                           = "Code doesnt exist";
+"err_user_wrong_credentials"                                    = "There is no user with this credentials";
+"err_is_phone_number"                                           = "Invalid phone number";
+"err_user_phone_verification_required"                          = "Your phone number is not verified";
+"err_user_not_verified"                                         = "This user is not verified";
+"err_user_already_exists"                                       = "User already exists";
+"err_user_name_already_exists"                                  = "Username is not available";
+"err_user_forbidden"                                            = "Your access is limited";
+"err_user_phone_already_exists"                                 = "Phone number is already in use";
+"err_user_email_already_exists"                                 = "Email is already in use";
+"err_user_email_not_verified"                                   = "Your email is not verified";
+"err_unknown_error"                                             = "Something went wrong";
+"err_code_lifetime_ends"                                        = "Code is not valid anymore";
+"err_kyc_verification_already_passed"                           = "KYC verification already passed";
+"err_kyc_verification_not_exists"                               = "KYC verification not exist";
+"err_invalid_value"                                             = "Email validation failed";
+"err_firstname_is_not_empty"                                    = "First name is missing";
+"err_lastname_is_not_empty"                                     = "Last name is missing";
+"err_username_is_not_empty"                                     = "User name is missing";
+"err_countryid_is_not_empty"                                    = "Country is missing";
+"err_birthday_is_not_empty"                                     = "Birth day is missing";
+"err_type_is_not_empty"                                         = "User type is missing";
+"err_phone_is_not_empty"                                        = "Phone number is missing";
+"err_email_is_not_empty"                                        = "Email is missing";
+"err_firstname_matches"                                         = "First name validation failed";
+"err_lastname_matches"                                          = "Last name validation failed";
+"err_username_matches"                                          = "User name validation failed";
+"err_countryid_matches"                                         = "Country validation failed";
+"err_birthday_matches"                                          = "Birth day validation failed";
+"err_type_matches"                                              = "User type validation failed";
+"err_phone_matches"                                             = "Phone number validation failed";
+"err_email_matches"                                             = "Email validation failed";
+"err_cards_limit_exceeded"                                      = "Cards count limit has been exceeded";
+"err_cards_already_activated"                                   = "Card has been already activated";
+"err_transactions_insufficient_funds"                           = "You don't have enough money to make this transaction";
+"err_unhandled"                                                 = "There are some technical issues. Please try later";
+"err_service_unavailable"                                       = "Service temporarily unavailable";
+"err_phone_is_phone_number"                                     = "Invalid phone number";
+"err_login_is_phone_number_or_email"                            = "Login should be valid phone number or email";
+"err_account.iban_is_iban"                                      = "Invalid IBAN";
+"err_account.bic_is_bic"                                        = "Invalid BIC";
+"err_chat_room_not_exists"                                      = "Invalid Room";
+"err_user_not_found"                                            = "User doesn't exist";
+"err_payment_not_found"                                         = "Invalid Payment";
+"err_username_is_not_restricted_value"                          = "Unavailable username";
+"err_user_incorrect_password"                                   = "Old password is incorrect";
+"err_coin_does_not_exist"                                       = "Deposit address of the coin does not exist";
+"err_crypto_max_limit_exceed"                                   = "Crypto max limit has been exceed";
+"err_crypto_invalid_memo"                                       = "Invalid Memo";
+"err_card_payment_required"                                     = "You need to pay for physical card to use it";
+"err_user_deactivated"                                          = "User is deactivated. Please contact to our support";
+"err_user_password_same_as_old"                                 = "You entered your previous password";
+"err_channelname_is_not_restricted_value"                       = "Channel name is not available";
+
+// KYC Verification Blocker
+
+"kycVerificationBlocker.title"                                      = "KYC Verification";
+"kycVerificationBlocker.notVerified.description"                    = "KYC Verification has not been approved. Please contact Customer support or try another account";
+"kycVerificationBlocker.inProcess.description"                      = "Your KYC verification is in process. Some may take up to 3-5 business days.";
+"kycVerificationBlocker.failed.description"                         = "We have not been able to grant KYC Verification. Please contact Customer support.";
+"kycVerificationBlocker.createAnotherAccount"                       = "Create another account";
+"kycVerificationBlocker.createAnother"                              = "Create another";
+"kycVerificationBlocker.contactToSupport"                           = "Contact Support";
+
+"kycVerificationBlocker.notVerified.primaryButton.title"            = "Verify account";
+"kycVerificationBlocker.failed.primaryButton.title"                 = "Try Again";
+
+// Notification
+
+"KYC_APPROVED"                                                      = "🐶KYC verification";
+"KYC_APPROVED_BODY"                                                 = "Your KYC verification approved";
+
+"KYC_REJECTED"                                                      = "🚫KYC verification";
+"KYC_REJECTED_BODY"                                                 = "Your KYC verification rejected";
+
+"CRYPTO_TRANSACTION_RECEIVED"                                       = "Crypto Transaction";
+"CRYPTO_TRANSACTION_RECEIVED_BODY"                                  = "You received %@ %@";
+
+"FIAT_TRANSACTION_RECEIVED"                                         = "💶Fiat Transaction";
+"FIAT_TRANSACTION_RECEIVED_BODY"                                    = "You received %@ %@";
+
+"CRYPTO_TRANSACTION_ROLLBACK"                                       = "Crypto Transaction";
+"CRYPTO_TRANSACTION_ROLLBACK_BODY"                                  = "Your %@ %@ transaction has been rollbacked";
+
+"CARD_TRANSACTION_INITIATED"                                        = "Card transaction";
+"CARD_TRANSACTION_INITIATED_BODY"                                   = "%@ %@ transaction has been created";
+
+"CARD_TRANSACTION_INITIATED"                                        = "Card transaction";
+"CARD_TRANSACTION_INITIATED_BODY"                                   = "%@ %@ transaction has been created";
+
+"PAYMENT_REQUEST_CREATED"                                           = "💰Payment message";
+"PAYMENT_REQUEST_CREATED_BODY"                                      = "%@ %@ sent %@ %@";
+
+"PAYMENT_GROUP_REQUEST_CREATED_BODY"                                = "💰%@ %@ requested by %@ %@";
+"PAYMENT_DM_REQUEST_CREATED_BODY"                                   = "Requested %@ %@";
+
+"PAYMENT_GROUP_RECEIVED_BODY"                                       = "💰%@ %@ received by %@ %@";
+"PAYMENT_DM_RECEIVED_BODY"                                          = "Received %@ %@";
+
+"PAYMENT_GROUP_ACCEPTED_BODY"                                       = "✅ %@ %@ accepted by %@ %@";
+"PAYMENT_DM_ACCEPTED_BODY"                                          = "Accepted %@ %@";
+
+"PAYMENT_GROUP_REJECTED_BODY"                                       = "🚫%@ %@ rejected by %@ %@";
+"PAYMENT_DM_REJECTED_BODY"                                          = "Rejected %@ %@";
+
+"CARD_STATUS_CLOSED"                                                = "Card status";
+"CARD_STATUS_CLOSED_BODY"                                           = "Card has been successfully closed";
+
+"CARD_STATUS_FRAUD"                                                 = "Card status";
+"CARD_STATUS_FRAUD_BODY"                                            = "Card status changed to fraud";
+
+"CARD_STATUS_EXPIRED"                                               = "Card status";
+"CARD_STATUS_EXPIRED_BODY"                                          = "Card has been expired";
+
+"CARD_STATUS_SECURITY_BLOCK"                                        = "Card status";
+"CARD_STATUS_SECURITY_BLOCK_BODY"                                   = "Card has been blocked by security purposes";
+
+"WITHDRAWAL_FAILED"                                                 = "Crypto external transfer";
+"WITHDRAWAL_FAILED_BODY"                                            = "%@ %@ transfer to %@ address has been failed";
+
+"WITHDRAWAL_COMPLETED"                                              = "Crypto external transfer";
+"WITHDRAWAL_COMPLETED_BODY"                                         = "%@ %@ transfer to %@ address has been successfully completed";

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-SemiBold.ttf">
+            <string>Poppins-SemiBold</string>
+        </array>
+        <array key="Rubik-Bold.ttf">
+            <string>Rubik-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="VerifyPhoneNumberStackView" customModule="SwordAppArch">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ms3-NM-bot">
+                    <rect key="frame" x="20" y="89" width="81" height="35.666666666666657"/>
+                    <fontDescription key="fontDescription" name="Rubik-Bold" family="Rubik" pointSize="30"/>
+                    <color key="textColor" name="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b36-Ch-Sep">
+                    <rect key="frame" x="30" y="174.66666666666666" width="240" height="60"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="240" placeholder="YES" id="ihn-mh-1BN"/>
+                        <constraint firstAttribute="height" constant="60" id="uFW-jZ-asL"/>
+                    </constraints>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="rfb-HL-ctc">
+                    <rect key="frame" x="26.666666666666657" y="279.66666666666669" width="68.000000000000014" height="72"/>
+                    <subviews>
+                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qk0-dt-JtD" userLabel="Timer Label">
+                            <rect key="frame" x="0.0" y="0.0" width="68" height="0.0"/>
+                            <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins SemiBold" pointSize="14"/>
+                            <color key="textColor" name="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="45h-pg-wb5">
+                            <rect key="frame" x="0.0" y="0.0" width="68" height="30"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="wZQ-sA-aY3"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins SemiBold" pointSize="14"/>
+                            <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Button">
+                                <color key="titleColor" name="gradientDarkBlue"/>
+                            </state>
+                            <connections>
+                                <action selector="loginInfoButtonTouchUp:" destination="iN0-l3-epB" eventType="touchUpInside" id="s09-zL-M8e"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EPf-IX-UEF">
+                            <rect key="frame" x="0.0" y="40" width="68" height="32"/>
+                            <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins SemiBold" pointSize="14"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Button">
+                                <color key="titleColor" name="textBlue2"/>
+                            </state>
+                            <connections>
+                                <action selector="resendButtonTouchUp:" destination="iN0-l3-epB" eventType="touchUpInside" id="bHD-cY-ZTq"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="b36-Ch-Sep" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="1EJ-IM-yJA"/>
+                <constraint firstItem="rfb-HL-ctc" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="84g-f8-H3C"/>
+                <constraint firstItem="rfb-HL-ctc" firstAttribute="top" secondItem="b36-Ch-Sep" secondAttribute="bottom" constant="44.999999999999972" id="DPO-bQ-5Dr"/>
+                <constraint firstItem="Ms3-NM-bot" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="EoA-FW-YCB"/>
+                <constraint firstItem="Ms3-NM-bot" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="Qdc-BI-YUj"/>
+                <constraint firstItem="b36-Ch-Sep" firstAttribute="top" secondItem="Ms3-NM-bot" secondAttribute="bottom" constant="50" id="VRf-PS-Xbh"/>
+                <constraint firstItem="Ms3-NM-bot" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="30" id="kBo-SF-OLE"/>
+                <constraint firstItem="b36-Ch-Sep" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="30" id="kM5-zh-HYO"/>
+            </constraints>
+            <connections>
+                <outlet property="loginInfoButton" destination="45h-pg-wb5" id="aue-mM-kg6"/>
+                <outlet property="resendCodeButton" destination="EPf-IX-UEF" id="vyd-Uf-Uos"/>
+                <outlet property="timerLabel" destination="qk0-dt-JtD" id="ntj-Jt-U40"/>
+                <outlet property="titleLabel" destination="Ms3-NM-bot" id="qgA-Zj-CWj"/>
+                <outlet property="verificationCodeHolderView" destination="b36-Ch-Sep" id="4ip-fl-GPh"/>
+            </connections>
+            <point key="canvasLocation" x="130" y="21"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="gradientDarkBlue">
+            <color red="0.035000000149011612" green="0.20399999618530273" blue="0.53700000047683716" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="textBlue2">
+            <color red="0.20399999618530273" green="0.59200000762939453" blue="0.97600001096725464" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="textColor">
+            <color red="0.18400000035762787" green="0.18799999356269836" blue="0.19599999487400055" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

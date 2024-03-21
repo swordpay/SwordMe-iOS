@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21701"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB" customClass="IndeterminateProgressView" customModule="SwordAppArch">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="3"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W8h-ys-ZV8" userLabel="TrackView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="3"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="3" id="046-GL-CZb"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jyQ-wp-O6Y" userLabel="ProgressView">
+                    <rect key="frame" x="0.0" y="0.0" width="0.0" height="3"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" id="tfi-DF-XWs"/>
+                    </constraints>
+                </view>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jnD-Q6-Mab">
+                    <rect key="frame" x="-120" y="0.0" width="120" height="3"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="Llt-xr-Vrp"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="W8h-ys-ZV8" secondAttribute="bottom" id="1Pq-x3-vWw"/>
+                <constraint firstItem="jnD-Q6-Mab" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="-120" id="1SA-Rx-tYd"/>
+                <constraint firstItem="W8h-ys-ZV8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="AbO-IW-lbo"/>
+                <constraint firstItem="jyQ-wp-O6Y" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="BGi-5x-XRw"/>
+                <constraint firstItem="jnD-Q6-Mab" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="JrK-gj-CMQ"/>
+                <constraint firstItem="W8h-ys-ZV8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="PkC-AN-0G4"/>
+                <constraint firstAttribute="trailing" secondItem="W8h-ys-ZV8" secondAttribute="trailing" id="UlD-uG-VQg"/>
+                <constraint firstAttribute="bottom" secondItem="jnD-Q6-Mab" secondAttribute="bottom" id="V3O-0f-3Z4"/>
+                <constraint firstAttribute="bottom" secondItem="jyQ-wp-O6Y" secondAttribute="bottom" id="ou1-NJ-Omc"/>
+                <constraint firstItem="jyQ-wp-O6Y" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="psV-VW-fs9"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="animatableProgressView" destination="jnD-Q6-Mab" id="rAE-ON-faf"/>
+                <outlet property="animatableProgressViewLeadingConstraint" destination="1SA-Rx-tYd" id="8fT-Xk-n49"/>
+                <outlet property="progressView" destination="jyQ-wp-O6Y" id="Ylz-ft-wVU"/>
+                <outlet property="progressViewWidthConstraint" destination="tfi-DF-XWs" id="CJ3-JV-g0c"/>
+                <outlet property="trackView" destination="W8h-ys-ZV8" id="xni-mt-sif"/>
+            </connections>
+            <point key="canvasLocation" x="14" y="21"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
